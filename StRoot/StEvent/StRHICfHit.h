@@ -65,7 +65,7 @@ class StRHICfHit : public TObject
 		Float_t mL90[kRHICfNtower];
 
 		Int_t mPointNum[kRHICfNtower];
-		Int_t mGSOMaxLayer[kRHICfNtower][kRHICfNorder];
+		Int_t mGSOMaxLayer[kRHICfNtower][2];
 		Int_t mMaxPeakBin[kRHICfNtower][kRHICfNlayer][kRHICfNxy];
 
 		Int_t mSingleHitNum[kRHICfNtower][kRHICfNlayer][kRHICfNxy];
@@ -74,10 +74,10 @@ class StRHICfHit : public TObject
 		Float_t mSingleChiSquare[kRHICfNtower][kRHICfNlayer][kRHICfNxy];
 
 		Int_t mMultiHitNum[kRHICfNtower];
-		Float_t mMultiHitPos[kRHICfNtower][kRHICfNlayer][kRHICfNxy][kRHICfNorder];
-		Float_t mMultiPeakHeight[kRHICfNtower][kRHICfNlayer][kRHICfNxy][kRHICfNorder];
-		Float_t mMultiPeakRaw[kRHICfNtower][kRHICfNlayer][kRHICfNxy][kRHICfNorder];
-		Float_t mMultiEnergySum[kRHICfNtower][kRHICfNlayer][kRHICfNxy][kRHICfNorder];
+		Float_t mMultiHitPos[kRHICfNtower][kRHICfNlayer][kRHICfNxy][2];
+		Float_t mMultiPeakHeight[kRHICfNtower][kRHICfNlayer][kRHICfNxy][2];
+		Float_t mMultiPeakRaw[kRHICfNtower][kRHICfNlayer][kRHICfNxy][2];
+		Float_t mMultiEnergySum[kRHICfNtower][kRHICfNlayer][kRHICfNxy][2];
 		Float_t mMultiChiSquare[kRHICfNtower][kRHICfNlayer][kRHICfNxy];
 
 	ClassDef(StRHICfHit,1)

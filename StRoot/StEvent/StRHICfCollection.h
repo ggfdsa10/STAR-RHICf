@@ -57,7 +57,7 @@ class StRHICfCollection : public StObject
 		unsigned int mBunchNumber;
 		unsigned int mRunType;
 		unsigned int mRHICfTrigger;
-		unsigned int mRunTime[kRHICfNorder];
+		unsigned int mRunTime[2];
 		unsigned int mRunTRGM;
 
 	ClassDef(StRHICfCollection,1)
