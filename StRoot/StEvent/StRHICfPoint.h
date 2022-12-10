@@ -29,8 +29,8 @@ class StRHICfPoint : public TObject
         Int_t mParticleID;
 
 		Float_t mPointPos[kRHICfNxy];
-		Float_t mPointEnergy[kRHICfNorder];
-		Float_t mTowerSumEnergy[kRHICfNorder];
+		Float_t mPointEnergy[2];
+		Float_t mTowerSumEnergy[2];
 
 	ClassDef(StRHICfPoint,1)
 };

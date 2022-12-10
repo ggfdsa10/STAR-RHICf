@@ -29,14 +29,14 @@ class StRHICfRawHit : public TObject
 		unsigned int getGPI1(Int_t idx);
 
 	private:
-		Int_t mPlateADC[kRHICfNtower][kRHICfNplate][kRHICfNrange];      // ADC of GSO plate
-		Int_t mPlateADCDelay[kRHICfNtower][kRHICfNplate][kRHICfNrange]; // Delayed ADC of GSO plate (for pedestal)
+		Int_t mPlateADC[kRHICfNtower][kRHICfNplate][2];      // ADC of GSO plate
+		Int_t mPlateADCDelay[kRHICfNtower][kRHICfNplate][2]; // Delayed ADC of GSO plate (for pedestal)
 		Int_t mGSOSmallADC[kRHICfNlayer][kRHICfNxy][kRHICfNbarSmall];   // ADC of GSO bar of small tower 
 		Int_t mGSOLargeADC[kRHICfNlayer][kRHICfNxy][kRHICfNbarLarge];   // ADC of GSO bar of large tower
-		unsigned int mTDC[kRHICfNtdc];   // TDC 
-		unsigned int mCAD0[kRHICfNcad0]; // CAD0
-		unsigned int mGPI0[kRHICfNgpi0]; // GPI0
-		unsigned int mGPI1[kRHICfNgpi1]; // GPI1
+		unsigned int mTDC[256];   // TDC 
+		unsigned int mCAD0[5]; // CAD0
+		unsigned int mGPI0[19]; // GPI0
+		unsigned int mGPI1[17]; // GPI1
 
     ClassDef(StRHICfRawHit,1)
 };
